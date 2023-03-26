@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    list-style: none;
+}
+
+
+
+header{
+    background-color: #5d686d;;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #5e7e8d;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu .menuLiens{
+    width: 100%;
+}
+
+.menu .menuLiens ul{
+    display: flex;
+    justify-content: center;
+}
+
+.menu .menuLiens li{
+
+    margin: 4rem;
+}
+
+ #navbar ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+} 
+
+
+
+.menu .menuHamburger{
+    width: 20px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    display: none;
+}
+
+
+
+#navbar li{
+   margin-right: 10%;
+}
+
+
+.logo img{
+    width: 10rem;
+    
+}
+
+.barreMenu{
+    display: none;
+   }
+
+.login a i{
+    color: rgb(255, 253, 253);
+    display: none;
+} 
+
+.panier a i{
+    color: white;
+    display: none;
+}
+
+
+
+
+
+@media all and (max-width: 950px) {
+ 
+    .menu{
+        margin: 0;
+    }
+
+    .menu .menuHamburger{
+        display: block;
+    
+    }
+   
+    .menu .menuLiens{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(63, 63, 203, 0.215);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+
+    }
+
+    .menuLiens.mobile-menu{
+        margin-left: 0;
+    }
+
+   .menu .menuLiens ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .menu .menuLiens li{
+    margin: 25px 0;
+    font-size: 1em;
+   }
+    
+   .logo img{
+    width: 10rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   
+   }
+
+   .barre{
+    display: none;
+   }
+
+   .login p{
+    display: none;
+   }
+
+   .login a i{
+    color: rgb(255, 255, 255);
+    display:flex;
+} 
+.panier p{
+    display: none;
+}
+
+.panier a i{
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+
+
+}
+

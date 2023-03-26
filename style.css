@@ -1,0 +1,71 @@
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;  /*enleve les puces de la liste*/
+    
+}
+nav li{
+    display: inline;
+    padding: 2%;
+}
+
+
+.logo img{
+    width: 30%;
+}
+
+.login a i{
+    display: none;
+}
+
+.panier a i{
+    font-size: 40px;
+
+}
+.btn-group{
+    display:none;
+}
+
+h1{
+    color: red;
+}
+body{
+    background: radial-gradient(ellipse,#2f56da, white);
+}
+h5{
+    color: black;
+}
+
+
+
+
+@media all and (max-width: 770px) {
+
+    .btn-group{
+        display:flex;
+}
+    .login a p{
+        display: none;
+    }
+    .login a i{
+        display: flex;
+    }
+    .panier a i{
+        font-size: 20px;
+    
+    }
+    .barre{
+        display: none;
+    }
+    .barre #search{
+        width:100px;
+        text-align: left;
+    }
+    nav ul{
+        display: none;
+    }
+  
+   
+}
+
