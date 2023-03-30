@@ -1,13 +1,13 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-   
+   box-sizing: border-box;
     list-style: none;
-}
+} */
 
 
 
-header{
+/* header{
     background-color: #5d686d;;
     height: 100vh;
     width: 100vw;
@@ -89,13 +89,59 @@ header a{
 .panier a i{
     color: white;
     display: none;
+} */
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.slider img{
+    max-width: 100%;
+    display: none;
+}
+
+img.active{
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0 10 px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 50px;
+    margin:  0 15px;
+    cursor: pointer;
 }
 
 
 
 
 
-@media all and (max-width: 950px) {
+
+/* @media all and (max-width: 950px) {
  
     .menu{
         margin: 0;
@@ -168,5 +214,5 @@ header a{
 
 
 
-}
+} */
 
