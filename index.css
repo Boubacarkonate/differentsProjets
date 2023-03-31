@@ -1,25 +1,73 @@
-/* * {
+*, ::before, ::after{
     margin: 0;
     padding: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
     list-style: none;
-} */
+}
 
 
 
-/* header{
+ header{
     background-color: #5d686d;;
-    height: 100vh;
-    width: 100vw;
+   
 
 }
 
 header a{
     color: white;
     text-decoration: none;
+}  
+
+#navbar ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+} 
+
+#navbar li{
+    margin-right: 10%;
+ }
+
+ 
+ .logo img{
+    width: 10rem;
+    
 }
 
-.menu{
+.barreMenu{
+    display: none;
+}
+   
+.login a i{
+    color: rgb(255, 253, 253);
+    display: none;
+} 
+
+.panier a i{
+    color: white;
+    display: none;
+} 
+
+.dropdown{
+    display: none;
+}
+
+.menu .menuLiens ul{
+    display: flex;
+    justify-content: center;
+    background-color: #5e7e8d;
+}
+
+.menu .menuLiens li{
+    
+    margin: 0 60px;
+    
+}
+
+
+
+/* .menu{
     position: absolute;
     display: flex;
     margin: 50px;
@@ -27,7 +75,7 @@ header a{
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    background-color: #5e7e8d;
+    
 }
 .menu a{
     color: white;
@@ -38,64 +86,8 @@ header a{
     width: 100%;
 }
 
-.menu .menuLiens ul{
-    display: flex;
-    justify-content: center;
-}
+*/
 
-.menu .menuLiens li{
-
-    margin: 4rem;
-}
-
- #navbar ul{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
-} 
-
-
-
-.menu .menuHamburger{
-    width: 20px;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    display: none;
-}
-
-
-
-#navbar li{
-   margin-right: 10%;
-}
-
-
-.logo img{
-    width: 10rem;
-    
-}
-
-.barreMenu{
-    display: none;
-   }
-
-.login a i{
-    color: rgb(255, 253, 253);
-    display: none;
-} 
-
-.panier a i{
-    color: white;
-    display: none;
-} */
-
-*, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .container{
     max-width: 800px;
     margin: 0 auto;
@@ -125,6 +117,7 @@ img.active{
     width: 100%;
     height: auto;
     border: 1px solid black;
+    border-radius: 30px;
     box-shadow: 0 10 px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
@@ -141,18 +134,18 @@ img.active{
 
 
 
-/* @media all and (max-width: 950px) {
+@media all and (max-width: 950px) {
  
     .menu{
         margin: 0;
     }
 
-    .menu .menuHamburger{
+    .dropdown{
         display: block;
-    
+        text-align: right;
     }
    
-    .menu .menuLiens{
+    /* .menu .menuLiens{
         top: 0;
         left: 0;
         position: absolute;
@@ -166,11 +159,11 @@ img.active{
         margin-left: -100%;
         transition: all 0.5s ease;
 
-    }
+    } 
 
-    .menuLiens.mobile-menu{
+     .menuLiens.mobile-menu{
         margin-left: 0;
-    }
+    } 
 
    .menu .menuLiens ul{
     display: flex;
@@ -181,6 +174,10 @@ img.active{
    .menu .menuLiens li{
     margin: 25px 0;
     font-size: 1em;
+   }
+   */
+   .menu{
+    display: none;
    }
     
    .logo img{
@@ -214,5 +211,5 @@ img.active{
 
 
 
-} */
+}
 

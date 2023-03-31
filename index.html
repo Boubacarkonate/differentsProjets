@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="container-fluid"></div>
+<!-- <div class="container-fluid"></div>
     <nav class="menu">
         <div class="menuLiens">
             <ul>
@@ -32,10 +32,6 @@
         <img src="./illustrationProjet/ouverture.svg" alt="menu" class="menuHamburger">
     </nav>
 
-
-
-<header>
-    
     <div id="navbar">
         <ul>
             <li>
@@ -63,64 +59,92 @@
             </li>
         </ul>
 
-    </div>
- 
+    </div> -->
 
-<!--RESTE A FAIRE COROUSIL DES MENUS, AJUSTER CORRECTEREMENT LA NAVBAR : EFFACCER LES ELEMENTS QUI NE DOIVENT PLUS ETRE PRESENTS EN RESPONSIVE-->
+<header>
+    
+<nav>
+    <div id="navbar">
+        <ul>
+            <li>
+                <div class="logo"><a href="index.html"><img src="./illustrationProjet/logo3.png" alt="logo"></a></div>
+            </li>
+            <li>
+                <div class="barre">
+                    <form method="get" action="">
+                        <input type="search" name="search" id="search" placeholder="mot..." size=""><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="barreMenu">
+                    <form method="get" action="">
+                        <input type="search" name="search" id="search" placeholder="mot..." size=""><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <div class="login">
+                    <a href="#"><p>se connecter</p><i class="fa-solid fa-user"></i></a>
+                </div>
+            </li>
+            <li>
+                <div class="panier"><a href="#"><p>recrutement</p> <i class="fa-solid fa-basket-shopping"></i></a></div>
+            </li>
+        </ul>
 
+    </div> 
+
+    <div class="dropdown">
+        <a class="btn bg-transparent dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./illustrationProjet/ouverture.svg" alt="menu" class="menuHamburger">
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+                <form method="get" action="">
+                    <input type="search" name="search" id="search" placeholder="mot..." size=""><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
+          </li>
+          <li><a class="dropdown-item" href="./pageRecruteurOffreCandidatHtml/pageRecuteur.html" target="_blank">recruteur</a></li>
+          <li><a class="dropdown-item" href="./pageRecruteurOffreCandidatHtml/pageCandidat.html" target="_blank">candidat</a></li>
+          <li><a class="dropdown-item"  href="./pageRecruteurOffreCandidatHtml/pageOffreEmploi.html" target="_blank">offre d'emploi</a></li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <div class="menuLiens">
+            <ul>
+                <li>
+                    <a href="./pageRecruteurOffreCandidatHtml/pageRecuteur.html" target="_blank">recruteur</a>
+                </li>
+                <li>
+                    <a href="./pageRecruteurOffreCandidatHtml/pageOffreEmploi.html" target="_blank">offre d'emploi</a>
+                </li>
+                <li>
+                    <a href="./pageRecruteurOffreCandidatHtml/pageCandidat.html" target="_blank">candidat</a>
+                </li>
+            </ul>
+        </div>
+       
+</nav>
 
 
     </header>
+
             <main>
-<!-- 
-                <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active d-flex justify-content-center">
-      <img src="./illustrationProjet/iconPanier.png" class="d-block w-25 " alt="...">
-    </div>
-    <div class="carousel-item d-flex justify-content-center">
-      <img src="./illustrationProjet/iconPanier.png" class="d-block w-25 " alt="...">
-    </div>
-    <div class="carousel-item d-flex justify-content-center">
-      <img src="./illustrationProjet/iconPanier.png" class="d-block w-25 " alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
+                <div class="container">
 
-
-        <div class="container">
-
-            <div class="slider">
-                <img class="active" src="./illustrationProjet/iconPanier.png" alt="">
-                <img src="./illustrationProjet/iconPanier.png" alt="">
-                <img src="./illustrationProjet/iconPanier.png" alt="">
-            </div>
-            
-            <div class="cont-btn">
-                <div class="btn-nav left"></div>
-                <div class="btn-nav right"></div>
-            </div>
-
-        </div>
-
-
-
-
-
-
+                    <div class="slider">
+                        <img class="active" src="./illustrationProjet/iconPanier.png" alt="">
+                        <img src="./illustrationProjet/iconPanier.png" alt="">
+                        <img src="./illustrationProjet/iconPanier.png" alt="">
+                    </div>
+                    
+                    <div class="cont-btn">
+                        <div class="btn-nav left"> ← </div>
+                        <div class="btn-nav right"> → </div>
+                    </div>
+                
+                </div>
 
             </main>
 
